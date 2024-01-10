@@ -98,7 +98,8 @@ resetBtn.addEventListener("click", () => {
         boxes[i].innerText = "";
         boxes[i].disabled = false;
     }
-    showElementForDuration(document.querySelector('.turn0'), 1);
+    showElementForDuration(turnOfO, 1);
+    turn0 = true;
 });
 
 const checkWinner = () => {
