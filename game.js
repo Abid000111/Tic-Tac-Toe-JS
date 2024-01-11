@@ -78,6 +78,7 @@ for (let i = 0; i < boxes.length; i++) {
             if (turn0 === true) {
                 turn0 = false;
                 boxes[i].innerText = "O";
+                boxes[i].style.color = "green";
                 event.target.disabled = true; // Disable the button
                 hideElementForDuration(reset, 1);
                 checkWinner();
@@ -85,6 +86,7 @@ for (let i = 0; i < boxes.length; i++) {
             } else {
                 turn0 = true;
                 boxes[i].innerText = "X";
+                boxes[i].style.color = "red";
                 event.target.disabled = true; // Disable the button
                 checkWinner();
                 showElementForDuration(turnOfO, 1);
@@ -112,13 +114,14 @@ const checkWinner = () => {
                 resetBtn.style.visibility = "hidden";
                 // turnOfO.style.visibility = "hidden";
                 // turnOfX.style.visibility = "hidden";
-                winner.innerText = pos1 + " is winner...!!!";
+                // winner.innerText = pos1 + " is winner...!!!";
+                winner.innerText = pos1 + " is winner";
                 showWinner();
                 showElementAfterDuration(gameOverBtn, 3.5);
                 for (let i = 0; i < boxes.length; i++) {
                     boxes[i].disabled = true;
                 }
-            }
+            } 
         }
     }
 }
