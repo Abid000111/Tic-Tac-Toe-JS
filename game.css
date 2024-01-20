@@ -1,268 +1,267 @@
 * {
-    margin: 0;
-    padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    background-color: rgb(85, 154, 156);
+	background-color: rgb(85, 154, 156);
 }
 
 .turnO {
-    box-sizing: border-box;
-    visibility: hidden;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    border: 1px solid rgb(201, 56, 56);
-    border-radius: 45px;
-    height: 15vh;
-    width: 50vw;
-    background-color: rgb(201, 56, 56);
-    color: rgb(218, 210, 210);
-    font-weight: bold;
-    font-size: 5vmax;
+	box-sizing: border-box;
+	visibility: hidden;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	border: 1px solid rgb(201, 56, 56);
+	border-radius: 45px;
+	height: 15vh;
+	width: 50vw;
+	background-color: rgb(201, 56, 56);
+	color: rgb(218, 210, 210);
+	font-weight: bold;
+	font-size: 5vmax;
 }
 
 .turnX {
-    box-sizing: border-box;
-    visibility: hidden;
-    position: relative;
-    top: 69.39vh;
-    left: 50%;
-    transform: translate(-50%);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid rgb(201, 56, 56);
-    border-radius: 45px;
-    height: 15vh;
-    width: 50vw;
-    background-color: rgb(201, 56, 56);
-    color: rgb(218, 210, 210);
-    font-weight: bold;
-    font-size: 5vmax;
-    z-index: 1;
+	box-sizing: border-box;
+	visibility: hidden;
+	position: relative;
+	top: 69.39vh;
+	left: 50%;
+	transform: translate(-50%);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid rgb(201, 56, 56);
+	border-radius: 45px;
+	height: 15vh;
+	width: 50vw;
+	background-color: rgb(201, 56, 56);
+	color: rgb(218, 210, 210);
+	font-weight: bold;
+	font-size: 5vmax;
+	z-index: 1;
 }
 
 .container {
-    box-sizing: border-box;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 2;
+	box-sizing: border-box;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
 }
 
 .game {
-    box-sizing: border-box;
-    position: relative;
-    height: 60vh;
-    width: 60vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    column-gap: 4%;
-    row-gap: 4%;
-    z-index: 3;
+	box-sizing: border-box;
+	position: relative;
+	height: 60vh;
+	width: 60vh;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	column-gap: 4%;
+	row-gap: 4%;
+	z-index: 3;
 }
 
 .box {
-    box-sizing: border-box;
-    background-color: bisque;
-    border-radius: 14px;
-    border: none;
-    box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-    font-size: 600%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	box-sizing: border-box;
+	background-color: bisque;
+	border-radius: 14px;
+	border: none;
+	box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+	font-size: 600%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 button:hover {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 .box:hover {
-    background-color: antiquewhite;
+	background-color: antiquewhite;
 }
 
 #reset {
-    border: 3px solid rgb(255 92 0);
-    box-sizing: border-box;
-    position: absolute;
-    top: 88vh;
-    left: 50%;
-    transform: translate(-50%);
-    height: 5vh;
-    width: 15vw;
-    /* margin: auto; */
-    border-radius: 15px;
-    background-color: rgb(255, 0, 0);
-    color: white;
-    /* border: none; */
-    /* font-size: 17px; */
-    font-size: 2.32vh;
+	border: 3px solid rgb(255 92 0);
+	box-sizing: border-box;
+	position: absolute;
+	top: 88vh;
+	left: 50%;
+	transform: translate(-50%);
+	height: 5vh;
+	width: 15vw;
+	/* margin: auto; */
+	border-radius: 15px;
+	background-color: rgb(255, 0, 0);
+	color: white;
+	/* border: none; */
+	/* font-size: 17px; */
+	font-size: 2.32vh;
 }
 
 #reset:hover {
-    background-color: rgba(252, 92, 29, 0.699);
-    color: black;
+	background-color: rgba(252, 92, 29, 0.699);
+	color: black;
 }
 
-.winner{
-    box-sizing: border-box;
-    border: 2px solid black;
-    height: 40vh;
-    width: 100vw;
-    background-color: rgb(201, 56, 56);
-    color: rgb(218, 210, 210);
-    font-weight: bold;
-    font-size: 5vmax;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    z-index: 3;
-    visibility: hidden;
+.winner {
+	box-sizing: border-box;
+	border: 2px solid black;
+	height: 40vh;
+	width: 100vw;
+	background-color: rgb(201, 56, 56);
+	color: rgb(218, 210, 210);
+	font-weight: bold;
+	font-size: 5vmax;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 3;
+	visibility: hidden;
 }
 
-.g-over-container{
-    border: 3px solid rgb(255 245 0);
-    border-radius: 15px;
-    background-color: rgb(9 0 177);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 20vh;
-    width: 40vw;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 4;
-    visibility: hidden;
+.g-over-container {
+	border: 3px solid rgb(255 245 0);
+	border-radius: 15px;
+	background-color: rgb(9 0 177);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 20vh;
+	width: 40vw;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 4;
+	visibility: hidden;
 }
 
-.g-over{
-    border: none;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-rows: 5vh 5vh;
-    grid-template-columns: 35vw;
-    row-gap: 20%;
+.g-over {
+	border: none;
+	box-sizing: border-box;
+	display: grid;
+	grid-template-rows: 5vh 5vh;
+	grid-template-columns: 35vw;
+	row-gap: 20%;
 }
 
-#n-game{
-    border: 3px solid rgb(255 186 0);
-    background-color: rgb(0 152 255);
-    border-radius: 15px;
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 2.32vh;
+#n-game {
+	border: 3px solid rgb(255 186 0);
+	background-color: rgb(0 152 255);
+	border-radius: 15px;
+	color: aliceblue;
+	font-weight: bold;
+	font-size: 2.32vh;
 }
 
-#n-game:hover{
-    background-color: rgb(96, 96, 199);
-    color: black;
+#n-game:hover {
+	background-color: rgb(96, 96, 199);
+	color: black;
 }
 
-#h-btn{
-    border: 3px solid rgb(255 186 0);
-    background-color: rgb(0 152 255);
-    border-radius: 15px;
-    color: aliceblue;
-    font-weight: bold;
-    font-size: 2.32vh;
+#h-btn {
+	border: 3px solid rgb(255 186 0);
+	background-color: rgb(0 152 255);
+	border-radius: 15px;
+	color: aliceblue;
+	font-weight: bold;
+	font-size: 2.32vh;
 }
 
-#h-btn:hover{
-    background-color: rgb(96, 96, 199);
-    color: black;
+#h-btn:hover {
+	background-color: rgb(96, 96, 199);
+	color: black;
 }
 
-@media only screen and (max-width: 455px){
+@media only screen and (max-width: 455px) {
+	.turnO {
+		visibility: hidden;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%) rotate(180deg);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-wrap: wrap;
+		border: 1px solid rgb(201, 56, 56);
+		border-radius: 45px;
+		height: 15vh;
+		width: 50vw;
+		background-color: rgb(201, 56, 56);
+		color: rgb(218, 210, 210);
+		font-weight: bold;
+		font-size: 5vmax;
+	}
 
-    .turnO {
-        visibility: hidden;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%) rotate(180deg);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-wrap: wrap;
-        border: 1px solid rgb(201, 56, 56);
-        border-radius: 45px;
-        height: 15vh;
-        width: 50vw;
-        background-color: rgb(201, 56, 56);
-        color: rgb(218, 210, 210);
-        font-weight: bold;
-        font-size: 5vmax;
-    }
+	.turnX {
+		visibility: hidden;
+		position: relative;
+		top: 69.39vh;
+		left: 50%;
+		transform: translate(-50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 1px solid rgb(201, 56, 56);
+		border-radius: 45px;
+		height: 15vh;
+		width: 50vw;
+		background-color: rgb(201, 56, 56);
+		color: rgb(218, 210, 210);
+		font-weight: bold;
+		font-size: 5vmax;
+		z-index: 2;
+	}
 
-    .turnX {
-        visibility: hidden;
-        position: relative;
-        top: 69.39vh;
-        left: 50%;
-        transform: translate(-50%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px solid rgb(201, 56, 56);
-        border-radius: 45px;
-        height: 15vh;
-        width: 50vw;
-        background-color: rgb(201, 56, 56);
-        color: rgb(218, 210, 210);
-        font-weight: bold;
-        font-size: 5vmax;
-        z-index: 2;
-    }
+	.game {
+		height: 80vw;
+		width: 80vw;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		column-gap: 4%;
+		row-gap: 4%;
+	}
 
-    .game {
-        height: 80vw;
-        width: 80vw;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        column-gap: 4%;
-        row-gap: 4%;
-    }
+	.box {
+		background-color: bisque;
+		border-radius: 14px;
+		border: none;
+		box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+		font-size: 250%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .box {
-        background-color: bisque;
-        border-radius: 14px;
-        border: none;
-        box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-        font-size: 250%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #reset {
-        position: absolute;
-        top: 88vh;
-        left: 50%;
-        transform: translate(-50%);
-        height: 5vh;
-        width: 30vw;
-        margin: auto;
-        border-radius: 15px;
-        background-color: rgb(146, 55, 19);
-        color: white;
-        border: none;
-        font-size: 17px;
-    }
+	#reset {
+		position: absolute;
+		top: 88vh;
+		left: 50%;
+		transform: translate(-50%);
+		height: 5vh;
+		width: 30vw;
+		margin: auto;
+		border-radius: 15px;
+		background-color: rgb(146, 55, 19);
+		color: white;
+		border: none;
+		font-size: 17px;
+	}
 }
